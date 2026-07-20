@@ -14,12 +14,6 @@ st.set_page_config(
 # ==========================
 # GOOGLE SHEETS
 # ==========================
-# Cara 1 (lokal): butuh file "service_account.json" di folder yang sama.
-# Cara 2 (Streamlit Cloud): isi kredensial lewat menu Secrets di app
-# settings, dengan key "gcp_service_account" (format TOML, lihat panduan).
-# Kode ini otomatis pakai Secrets kalau ada, kalau nggak ada baru pakai
-# file lokal -- jadi bisa dipakai di laptop maupun di Streamlit Cloud
-# tanpa ubah kode.
 
 scope = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -61,9 +55,9 @@ def get_latest_data(tempat):
     return data_tempat[-1]
 
 
-# ==========================
-# KLASIFIKASI (disamakan dgn firmware)
-# ==========================
+# ==============
+# KLASIFIKASI 
+# ==============
 
 def status_ph(ph):
     ph = float(ph)
