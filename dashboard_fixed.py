@@ -478,7 +478,7 @@ elif "📍 Tempat" in menu:
     with col4:
         st.markdown(f"""
         <div class="card">
-            <h3>⚡ EC (estimasi)</h3>
+            <h3>⚡ EC </h3>
             <div class="value">{ec_before} → {ec_after}</div>
             <p>{status_ec(ec_before)} → {status_ec(ec_after)}</p>
         </div>
